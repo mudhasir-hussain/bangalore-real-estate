@@ -26,7 +26,7 @@ function onClickedEstimatePrice() {
     var location = document.getElementById("uiLocations");
     var estPrice = document.getElementById("uiEstimatedPrice");
 
-    var url = "http://127.0.0.1:5001/api/predict_home_price"; // <-- ONLY THIS
+    var url = "http://127.0.0.1:5001/api/predict_home_price"; 
 
     $.post(url, {
     total_sqft: parseFloat(sqft.value),
@@ -36,7 +36,7 @@ function onClickedEstimatePrice() {
 }, function(data, status) {
     console.log(data.estimated_price);
     estPrice.innerHTML = "<h2>" + data.estimated_price.toString() + " Lakh</h2>";
-    estPrice.classList.add("show"); // <-- add class to show styling
+    estPrice.classList.add("show"); 
     console.log(status);
 });
 

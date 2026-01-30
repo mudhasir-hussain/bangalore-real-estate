@@ -56,7 +56,7 @@ def get_estimated_price(
     if loc_index >= 0:
         x[loc_index] = 1
 
-    x = x.reshape(1, -1)  # ✅ important for predict()
+    x = x.reshape(1, -1)  
 
     return round(float(__model.predict(x)[0]), 2)
 

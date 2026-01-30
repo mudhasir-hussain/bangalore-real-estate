@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
-/* ===== Background Image ===== */
+
 .img {
-  background: url('https://images.unsplash.com/photo-1698852880082-f0d065e646de?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
+  background: url(bgimg.avif) no-repeat center center;
   background-size: cover;
   position: fixed;
   width: 100%;
@@ -12,7 +12,7 @@
   z-index: -1;
 }
 
-/* ===== Body styling ===== */
+
 body, html {
   margin: 0;
   padding-top: 8vh;
@@ -24,7 +24,7 @@ body, html {
 
 }
 
-/* ===== Navigation Bar ===== */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -32,40 +32,40 @@ body, html {
   width: 95%;
   padding: 15px 50px;
   display: flex;
-  justify-content: space-between; /* Left and right sides */
+  justify-content: space-between; 
   align-items: center;
-  backdrop-filter: blur(8px);    /* Semi-transparent blur */
-  background: rgba(255, 255, 255, 0.25); /* Semi-transparent */
+  backdrop-filter: blur(8px);  
+  background: rgba(255, 255, 255, 0.25); 
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   z-index: 10;
   font-weight: 500;
 }
 
-/* Navbar left and right sections */
+
 .nav-left, .nav-right {
   display: flex;
   gap: 25px;
 }
 
-/* Navbar links */
+
 .navbar a {
   text-decoration: none;
-  color: white;          /* Default color */
+  color: white;          
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-  color: black;          /* Hover color */
+  color: black;         
 }
 
 .form-container {
-  width: 25vw;                 /* Set width to 45% of viewport width */
-  height: 63vh;                /* Set height to 60% of viewport height */
-  backdrop-filter: blur(8px);    /* Semi-transparent blur */
-  background: rgba(255, 255, 255, 0.25);   /* Semi-transparent */
+  width: 25vw;                
+  height: 63vh;               
+  backdrop-filter: blur(8px);   
+  background: rgba(255, 255, 255, 0.25);  
   border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15); /* Shadow for depth */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15); 
   padding: 30px 40px;
   text-align: center;
   z-index: 10;
@@ -75,14 +75,14 @@ body, html {
 
 
 
-/* ===== Headings ===== */
+
 h2 {
   font-weight: 500;
   margin-bottom: 10px;
   color: white;
 }
 
-/* ===== Input fields ===== */
+
 .area, .location {
   font-family: "Roboto", sans-serif;
   outline: none;
@@ -102,7 +102,7 @@ h2 {
   box-shadow: 0 0 8px rgba(124,197,118,0.5);
 }
 
-/* ===== Radio buttons styling ===== */
+
 .switch-field {
   display: flex;
   margin-bottom: 20px;
@@ -137,7 +137,7 @@ h2 {
   margin-right: 0;
 }
 
-/* ===== Button styling ===== */
+
 .submit {
   background: #7cc576;
   color: white;
@@ -152,23 +152,22 @@ h2 {
   transition: all 0.3s ease;
 }
 
-/* ===== Result box styling ===== */
 .result {
-  display: inline-block;             /* Only takes as much space as content */
-  width: 10vw;                        /* Small width */
-  min-width: 60px;                    /* Optional: prevent too small */
-  height: auto;                       /* Adjust based on content */
-  padding: 0;                         /* No padding initially */
-  margin: 0;                          /* No margin */
+  display: inline-block;             
+  width: 10vw;                       
+  min-width: 60px;                   
+  height: auto;                      
+  padding: 0;                       
+  margin: 0;                        
   text-align: center;
   font-weight: 500;
   color: #000;
-  border: none;                       /* No border initially */
-  background: rgba(255, 255, 255, 0.0); /* Transparent initially */
-  transition: all 0.3s ease;         /* Smooth transition */
+  border: none;                       
+  background: rgba(255, 255, 255, 0.0);
+  transition: all 0.3s ease;         
 }
 
-/* When a result is present, add border, background and padding */
+
 .result.show {
   padding: 8px 12px;
   border: 1px solid #ccc;
@@ -178,7 +177,7 @@ h2 {
 }
 
 
-/* ===== Responsive ===== */
+
 @media screen and (max-width: 400px) {
   .form {
     padding: 20px;
